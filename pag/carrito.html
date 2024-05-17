@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/misEstilosCarrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--Cabecera-->
+    <header>
+        <div class="logo"><a href="index.html"><img src="../img/logos/logo-TECNOPLUS.png" alt=""></a></div>
+        <div class="logo1"><a href="index.html"><img src="../img/logos/logo1.png" alt=""></a></div>
+        <div class="barra-busqueda">
+            <form action="">
+                <input class="barraBusqueda" type="text" placeholder="Buscar..." name="search">
+                <button class="botonBusqueda" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="rs ">
+            <a href="https://www.whatsapp.com/?lang=es_LA"><img src="../img/logos/icono-whatsapp.png" alt=""></a> <a
+                href="https://www.facebook.com/?locale=es_LA"><img src="../img/logos/icono-facebook1.png" alt=""></a> <a
+                href="https://www.youtube.com/"><img src="../img/logos/logo-youtube.png" alt=""></a> <a
+                href="https://www.instagram.com/"><img src="../img/logos/icono-instagram.png" alt=""></a>
+        </div>
+        <nav class="menuP" id="menuP">
+            <ul class="menu" id="menu">
+                <li class="lista-principal"><a class="list1" href="categoria.html">Categorías</a>
+                    <div class="prueba">
+                        <ul class="submenu1">
+                            <li class="lista-secundaria"><a class="list2" href="computadoras.html">Computadoras</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="laptops.html">Laptops</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="celulares.html">Celulares</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="tablets.html">Tablets</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="perifericos.html">Periféricos</a>
+                                <ul class="submenu2">
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#mouseLink">Mouse</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#tecladoLink">Teclado</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#camaraLink">Cámara web</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#microfonoLink">Micrófono</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#parlantesLink">Parlantes</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="lista-principal"><a class="list1" href="ofertas.html">Ofertas</a></li>
+                <li class="lista-principal"><a class="list1" href="contactanos.html">Contáctanos</a></li>
+                <li class="lista-principal"><a class="list1" href="nuestraHistoria.html">Acerca de nosotros</a></li>
+                <li class="lista-principal"><a class="list1" href="carrito.html"><img style="width: 64px;height: 64px;" src="../img/logos/icono-carrito.png" alt="carrito"><span  id="counter">0</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburguesa" class="hamburguesa">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script src="../javaScript/scripHome.js"></script>
+
+
+    </header>
+    <!--Contenido de la pagina-->
+    <article>
+        <div class="contLista">
+              <div id="carrito">
+           
+            
+              </div>
+            <button class="botonPagar" id="botonPagar">Pagar</button>
+        </div>
+        <button class="botonPagar"  onclick="genPDF()">Imprimir comprobante</button>
+</div>
+<script src="../javaScript/script.js"></script>
+<script  src="../javaScript/jspdf.min.js" ></script>
+
+<script src="../javaScript/pdf.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+
+        <div class="medios">
+            
+            <fieldset>
+                <legend style="font-size: 20px;">Seleccione una opcion:</legend>
+                <input type="radio" id="opcion1" name="opciones">
+                <label for="opcion1">Visa</label><br>
+                <input type="radio" id="opcion2" name="opciones">
+                <label for="opcion2">MasterCard</label><br>
+                <input type="radio" id="opcion1" name="opciones">
+                <label for="opcion1">Yape</label><br>
+                <input type="radio" id="opcion2" name="opciones">
+                <label for="opcion2">Plin</label>
+               
+            </fieldset>
+        </div>
+
+
+    </article>
+
+
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="contenedor-footer">
+
+            <div class="categoria">
+
+                <ul>
+                    <li>Categoría
+                        <ul>
+                            <li>Computadoras</li>
+                            <li>Laptops</li>
+                            <li>Celulares</li>
+                            <li>Tablets</li>
+                            <li>Periféricos
+                                <ul>
+                                    <li>Teclado</li>
+                                    <li>Mouse</li>
+                                    <li>Auriculares</li>
+                                    <li>Cámara web</li>
+                                    <li>Parlantes</li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="acercaNosotros">
+                <ul>
+                    <li>Acerca de Nosotros
+                        <ul>
+                            <li>Nuestra Historia</li>
+                            <li>Misíon</li>
+                            <li>Visíon</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mediosPago1">
+                <ul>
+                    <li>Métodos de Pago
+                        <ul>
+                            <li>Visa</li>
+                            <li>MasterCard</li>
+                            <li>Yape</li>
+                            <li>Plin</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mediosPago2">
+                <img src="../img/logos/logo-visa.png" alt="">
+                <img src="../img/logos/logo-masterCard1.png" alt="">
+                <img src="../img/logos/logo-yape.jpg" alt="">
+                <img src="../img/logos/logo-plin.webp" alt="">
+            </div>
+        </div>
+
+        <h4 id="Copyright">Copyright 2023 | Todos los derechos reservados. Desarrollado por EquipoProductosTecnológicos
+        </h4>
+    </footer>
+</body>
+
+</html>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  const carritoElement = document.getElementById('carrito');
+  const carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+  const productos = {
+    1: { nombre: "• Audífono Gamer C/Microf Razer", precio: 699.00 },
+    2: { nombre: "• Laptop Asus VivoBook 14'", precio: 4149.00 },
+    3: { nombre: "• Cámara Web Logitech C920s", precio: 359.00 },
+    4: { nombre: "• Celular Motorola C7 64GB", precio: 630.00 },
+  };
+  let total=0;
+  let html = "<style>h3{font-size: 24px; } .eliminar {color: red; cursor: pointer;}</style><style>p{font-size: 24px; }</style>";
+  Object.keys(carrito).forEach(id => {
+    let producto = productos[id];
+    let subtotal = producto.precio * carrito[id];
+    total += subtotal;
+    html += `<p>${producto.nombre} - Cantidad: ${carrito[id]} - Precio total: S/.${producto.precio * carrito[id]} <span class='eliminar' onclick='eliminarProducto(${id})'>Eliminar</span></p>`;
+  });
+     // Agrega el total al HTML
+        html += `<h3>Total a Pagar: S/.${total.toFixed(2)}</h3>`;
+
+  carritoElement.innerHTML = html;
+});
+
+function eliminarProducto(idProducto) {
+  const carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+  delete carrito[idProducto]; // Elimina el producto del objeto carrito
+  localStorage.setItem('carrito', JSON.stringify(carrito)); // Guarda el nuevo carrito en localStorage
+  location.reload(); // Recarga la página para actualizar el carrito visualmente
+}
+
+</script>
+
+
+
+
+<script src="../javaScript/contador.js"></script>

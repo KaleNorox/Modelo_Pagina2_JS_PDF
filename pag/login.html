@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOPLUS</title>
+    <link rel="stylesheet" href="../css/misEstilosLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<div id="overlay"></div>
+<div id="custom-prompt" style="color: #00e1d8;">
+    <h1>¡Bienvenido! a TECNOPLUS :)</h1>
+    <h2 style="text-align: center;">Eres nuevo?</h2>
+    <div style="text-align: center;">
+        <button style="width: 200px;height: 50px;background-color: #002d2b; border-radius: 10px; color: white;"
+            id="btnRegistrar" class="btnsI" onmouseover="zoomBtnsLogin(0)"
+            onmouseout="regresarBtnsLogin(0)">Registrar</button>
+        <button style="width: 200px;height: 50px;background-color: #002d2b; border-radius: 10px; color: white;"
+            id="btn-continuar" class="btnsI" onmouseover="zoomBtnsLogin(1)" onmouseout="regresarBtnsLogin(1)">Continuar
+            sin registrar</button>
+    </div>
+    <h2 style="text-align: center;">Nos alegra tenerte de vuelta ;)</h2>
+    <div style="text-align: center;"><button
+            style="width: 200px;height: 50px;background-color: #002d2b; border-radius: 10px; color: white;"
+            id="btnIniciar" class="btnsI" onmouseover="zoomBtnsLogin(2)"
+            onmouseout="regresarBtnsLogin(2)">Iniciar</button></div>
+</div>
+<div id="custom-prompt1" style="color: #00e1d8;">
+    <h1 style="text-align: center;">Crear cuenta</h1>
+    <a href="" style="position:absolute; top: 0; right: 5px; color: #00e1d8;">regresar</a>
+
+    <form style="width: 380px;" id="registroForm">
+
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombres">
+        <input type="text" id="apellidos" name="apellidos" required placeholder="Apellidos"><br><br>
+        <input type="text" id="username" name="username" required placeholder="Nombre de usuario">
+        <input type="password" id="password" name="password" required placeholder="Contraseña"><br><br>
+        <input style="position: absolute;left: 31px;" type="password" id="confirmPassword" name="confirmPassword"
+            required placeholder="Confirme contraseña">
+        <label style="position: absolute;right: 142px;" for="fechaNacimiento">F. de Nac:</label>
+        <input style="position: absolute;right: 31px; width: 100px;" type="date" id="fechaNacimiento"
+            name="fechaNacimiento" required><br><br>
+        <input style="position: absolute;left: 31px; width: 350px;" type="email" id="email" name="email" required
+            placeholder="Correo electrónico"><br><br>
+        <button type="button"
+            style="width: 200px;height: 50px;background-color: #002d2b; border-radius: 10px; color: white;"
+            id="btnCrear" class="btnsI" onmouseover="zoomBtnsLogin(3)" onmouseout="regresarBtnsLogin(3)"
+            onclick="validarRegistro()">Crear</button>
+    </form>
+
+
+
+</div>
+
+
+<div id="custom-prompt2" style="color: #00e1d8;">
+    <h1 style="text-align: center;">Iniciar sesión</h1>
+    <a href="" style="position:absolute; top: 0; right: 5px; color: #00e1d8;">regresar</a>
+    <form id="loginForm">
+        <input type="text" id="loginUsername" name="loginUsername" required placeholder="Nombre de usuario">
+        <br><br><input type="password" id="loginPassword" name="loginPassword" required placeholder="Contraseña">
+        <br><br>
+        <div style="text-align: center;"><button type="button" onclick="iniciarSesion()"
+                style="width: 200px;height: 50px;background-color: #002d2b; border-radius: 10px; color: white;"
+                id="btnIniciarSesion" class="btnsI" onmouseover="zoomBtnsLogin(4)"
+                onmouseout="regresarBtnsLogin(4)">Iniciar sesión</button></div>
+        <br><br>
+        <div id="textInicioSesion">-----------------Inicia sesión con-----------------</div>
+        <div id="contenedorImgSesion"><img class="imgSesion" src="../img/logos/icono-google.png" alt=""
+                onclick="sesionRedes(0)" onmouseover="rotar(0)" onmouseout="volver2(0)"><img class="imgSesion"
+                src="../img/logos/icono-facebook1.png" alt="" onclick="sesionRedes(1)" onmouseover="rotar(1)"
+                onmouseout="volver2(1)"><img class="imgSesion" src="../img/logos/icono-twitter.png" alt=""
+                onclick="sesionRedes(2)" onmouseover="rotar(2)" onmouseout="volver2(2)"></div>
+    </form>
+
+</div>
+
+
+<div id="main-content">
+
+    <body>
+        <!--contenido de la cabecera-->
+
+        <header>
+            <div class="logo"><img src="../img/logos/logo-TECNOPLUS.png" alt=""></div>
+            <div class="logo1"><img src="../img/logos/logo1.png" alt=""></div>
+            <div class="barra-busqueda">
+                <form action="">
+                    <input class="barraBusqueda" type="text" placeholder="Buscar..." name="search">
+                    <button class="botonBusqueda" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="rs ">
+                <a href="https://www.whatsapp.com/?lang=es_LA"><img src="../img/logos/icono-whatsapp.png" alt=""></a> <a
+                    href="https://www.facebook.com/?locale=es_LA"><img src="../img/logos/icono-facebook1.png"
+                        alt=""></a> <a href="https://www.youtube.com/"><img src="../img/logos/logo-youtube.png"
+                        alt=""></a> <a href="https://www.instagram.com/"><img src="../img/logos/icono-instagram.png"
+                        alt=""></a>
+            </div>
+            <nav style="z-index: 1;" class="menuP" id="menuP">
+                <ul class="menu" id="menu">
+                    <li class="lista-principal"><a class="list1" href="categoria.html">Categorías</a>
+                        <div class="prueba">
+                            <ul class="submenu1">
+                                <li class="lista-secundaria"><a class="list2" href="computadoras.html">Computadoras</a>
+                                </li>
+                                <li class="lista-secundaria"><a class="list2" href="laptops.html">Laptops</a></li>
+                                <li class="lista-secundaria"><a class="list2" href="celulares.html">Celulares</a></li>
+                                <li class="lista-secundaria"><a class="list2" href="tablets.html">Tablets</a></li>
+                                <li class="lista-secundaria"><a class="list2" href="perifericos.html">Periféricos</a>
+                                    <ul class="submenu2">
+                                        <li class="lista-terciaria"><a class="list3"
+                                                href="perifericos.html#mouseLink">Mouse</a></li>
+                                        <li class="lista-terciaria"><a class="list3"
+                                                href="perifericos.html#tecladoLink">Teclado</a></li>
+                                        <li class="lista-terciaria"><a class="list3"
+                                                href="perifericos.html#camaraLink">Cámara web</a></li>
+                                        <li class="lista-terciaria"><a class="list3"
+                                                href="perifericos.html#microfonoLink">Micrófono</a></li>
+                                        <li class="lista-terciaria"><a class="list3"
+                                                href="perifericos.html#parlantesLink">Parlantes</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="lista-principal"><a class="list1" href="ofertas.html">Ofertas</a></li>
+                    <li class="lista-principal"><a class="list1" href="contactanos.html">Contáctanos</a></li>
+                    <li class="lista-principal"><a class="list1" href="nuestraHistoria.html">Acerca de nosotros</a></li>
+                    <li class="lista-principal"><a class="list1" href="carrito.html"><img
+                                style="width: 64px;height: 64px;" src="../img/logos/icono-carrito.png"
+                                alt="carrito"><span id="counter">0</span></a></li>
+                </ul>
+            </nav>
+
+            <div id="hamburguesa" class="hamburguesa">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <script src="../javaScript/scripHome.js"></script>
+
+
+        </header>
+        <!--Contenido-->
+
+        <!--codigo para mover el texto-->
+        <div class="contenedorTextoMov">
+            <div id="textoMov">Conviértete
+                en miembro y obtén 20% de descuento en tu primera compra. || Inicia sesión para poder descubrir
+                artículos exclusivos solo para miembros. || Haz click aquí</div>
+            <h1></h1>
+        </div>
+        <div class="banner">
+            <video src="../videos/asus.mp4" muted onended="playNextVideo()"></video>
+            <video src="../videos/razer.mp4" style="display: none;" muted onended="playNextVideo()"></video>
+            <video src="../videos/Samsung.mp4" style="display: none;" muted onended="playNextVideo()"></video>
+            <video src="../videos/apple.mp4" style="display: none;" muted onended="playNextVideo()"></video>
+            <video src="../videos/logitech.mp4" style="display: none;" muted onended="playNextVideo()"></video>
+
+        </div>
+        <script>
+            // Obtener todos los elementos de video
+            var videos = document.querySelectorAll('.banner video');
+            var currentVideoIndex = 0;
+            // Función para reproducir el siguiente video cuando el video actual haya terminado
+            function playNextVideo() {
+                videos[currentVideoIndex].style.display = 'none'; // Oculta el video actual
+                currentVideoIndex++; // Incrementa el índice del video actual
+                // Si hemos llegado al final de la lista de videos, volvemos al principio
+                if (currentVideoIndex >= videos.length) {
+                    currentVideoIndex = 0;
+                }
+                videos[currentVideoIndex].style.display = 'block'; // Muestra el siguiente video
+                videos[currentVideoIndex].play(); // Reproduce automáticamente el siguiente video
+            }
+
+            // Reproducir automáticamente el primer video
+            videos[currentVideoIndex].play();
+        </script>
+
+        <h1 style="background-color: black;" id="nuestrasMarcas">NUESTRAS MARCAS</h1>
+        <div class="contenedorImagenes1">
+            <img class="img" onmouseover="zoom1(0)" onmouseout="volver1(0)" src="../img/logos/logo-microsoft.jpg"
+                alt="">
+
+            <img class="img" onmouseover="zoom1(1)" onmouseout="volver1(1)" src="../img/logos/logo-hp.jpg" alt="">
+
+            <img class="img" onmouseover="zoom1(2)" onmouseout="volver1(2)" src="../img/logos/logo-razer.jpg"
+                onmouseover="aparecerVideo(2)" alt="">
+
+            <img class="img" onmouseover="zoom1(3)" onmouseout="volver1(3)" src="../img/logos/logo-logitech.jpg"
+                onmouseover="aparecerVideo(3)" alt="">
+
+            <img class="img" onmouseover="zoom1(4)" onmouseout="volver1(4)" src="../img/logos/logo-dell.jpg"
+                onmouseover="aparecerVideo(4)" alt="">
+
+            <img class="img" onmouseover="zoom1(5)" onmouseout="volver1(5)" src="../img/logos/logo-huawei.jpg"
+                onmouseover="aparecerVideo(5)" alt="">
+
+            <img class="img" onmouseover="zoom1(6)" onmouseout="volver1(6)" src="../img/logos/logo-motorola.jpg"
+                onmouseover="aparecerVideo(6)" alt="">
+
+            <img class="img" onmouseover="zoom1(7)" onmouseout="volver1(7)" src="../img/logos/logo-apple.png"
+                onmouseover="aparecerVideo(7)" alt="">
+
+
+
+        </div>
+
+
+        <div class="contenedorImagenes2">
+            <img onmouseover="zoom1(8)" onmouseout="volver1(8)" class="img" src="../img/logos/logo-samsung.webp" alt="">
+
+            <img onmouseover="zoom1(9)" onmouseout="volver1(9)" class="img" src="../img/logos/logo-xiaomi.jpg" alt="">
+
+            <img onmouseover="zoom1(10)" onmouseout="volver1(10)" class="img" src="../img/logos/logo-asus.jpg" alt="">
+
+            <img onmouseover="zoom1(11)" onmouseout="volver1(11)" class="img" src="../img/logos/logo-lenovo.jpg" alt="">
+
+            <img onmouseover="zoom1(12)" onmouseout="volver1(12)" class="img" src="../img/logos/logo-googlePixel.jpg"
+                alt="">
+
+        </div>
+        <!--Contenido del footer-->
+
+        <footer>
+            <div class="contenedor-footer">
+
+                <div class="categoria">
+
+                    <ul>
+                        <li>Categoría
+                            <ul>
+                                <li>Computadoras</li>
+                                <li>Laptops</li>
+                                <li>Celulares</li>
+                                <li>Tablets</li>
+                                <li>Periféricos
+                                    <ul>
+                                        <li>Teclado</li>
+                                        <li>Mouse</li>
+                                        <li>Auriculares</li>
+                                        <li>Cámara web</li>
+                                        <li>Parlantes</li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="acercaNosotros">
+                    <ul>
+                        <li>Acerca de Nosotros
+                            <ul>
+                                <li>Nuestra Historia</li>
+                                <li>Misíon</li>
+                                <li>Visíon</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mediosPago1">
+                    <ul>
+                        <li>Métodos de Pago
+                            <ul>
+                                <li>Visa</li>
+                                <li>MasterCard</li>
+                                <li>Yape</li>
+                                <li>Plin</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mediosPago2">
+                    <img src="../img/logos/logo-visa.png" alt="">
+                    <img src="../img/logos/logo-masterCard1.png" alt="">
+                    <img src="../img/logos/logo-yape.jpg" alt="">
+                    <img src="../img/logos/logo-plin.webp" alt="">
+                </div>
+            </div>
+
+            <h4 id="Copyright">Copyright 2023 | Todos los derechos reservados. Desarrollado por
+                EquipoProductosTecnológicos
+            </h4>
+        </footer>
+
+    </body>
+</div>
+<script src="../javaScript/codigoLogin.js"></script>
+
+</html>

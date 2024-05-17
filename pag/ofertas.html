@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas</title>
+    <link rel="stylesheet" href="../css/misEstilosOfertas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+        <div class="logo"><a href="index.html"><img src="../img/logos/logo-TECNOPLUS.png" alt=""></a></div>
+        <div class="logo1"><a href="index.html"><img src="../img/logos/logo1.png" alt=""></a></div>
+        <div class="barra-busqueda">
+            <form action="">
+                <input class="barraBusqueda" type="text" placeholder="Buscar..." name="search">
+                <button class="botonBusqueda" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="rs ">
+            <a href="https://www.whatsapp.com/?lang=es_LA"><img src="../img/logos/icono-whatsapp.png" alt=""></a> <a
+                href="https://www.facebook.com/?locale=es_LA"><img src="../img/logos/icono-facebook1.png" alt=""></a> <a
+                href="https://www.youtube.com/"><img src="../img/logos/logo-youtube.png" alt=""></a> <a
+                href="https://www.instagram.com/"><img src="../img/logos/icono-instagram.png" alt=""></a>
+        </div>
+        <nav class="menuP" id="menuP">
+            <ul class="menu" id="menu">
+                <li class="lista-principal"><a class="list1" href="categoria.html">Categorías</a>
+                    <div class="prueba">
+                        <ul class="submenu1">
+                            <li class="lista-secundaria"><a class="list2" href="computadoras.html">Computadoras</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="laptops.html">Laptops</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="celulares.html">Celulares</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="tablets.html">Tablets</a></li>
+                            <li class="lista-secundaria"><a class="list2" href="perifericos.html">Periféricos</a>
+                                <ul class="submenu2">
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#mouseLink">Mouse</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#tecladoLink">Teclado</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#camaraLink">Cámara web</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#microfonoLink">Micrófono</a></li>
+                                    <li class="lista-terciaria"><a class="list3"
+                                            href="perifericos.html#parlantesLink">Parlantes</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="lista-principal"><a class="list1" href="ofertas.html">Ofertas</a></li>
+                <li class="lista-principal"><a class="list1" href="contactanos.html">Contáctanos</a></li>
+                <li class="lista-principal"><a class="list1" href="nuestraHistoria.html">Acerca de nosotros</a></li>
+                <li class="lista-principal"><a class="list1" href="carrito.html"><img style="width: 64px;height: 64px;"
+                            src="../img/logos/icono-carrito.png" alt="carrito"><span  id="counter">0</span></a></li>
+            </ul>
+        </nav>
+
+        <div id="hamburguesa" class="hamburguesa">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script src="../javaScript/scripHome.js"></script>
+
+
+    </header>
+    <!--Contenido de la pagina-->
+    <article>
+        <div>
+            <h1 style="background-color: black; " id="ofertas">OFERTAS</h1>
+        </div>
+        <div class="contenedor-ofertas">
+
+            <figure><img class="imgOfer" onmouseover="zoom(0)" onmouseout="volver(0)" src="../img/ofertasfinal/oferta1.png" id="o1" alt="">
+                <figcaption> <button onclick="agregarAlCarrito(1)" class="botonAgregar">Agregar</button> </figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(1)" onmouseout="volver(1)" src="../img/ofertasfinal/oferta2.png" id="o2" alt="">
+                <figcaption><button onclick="agregarAlCarrito(2)"  class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(2)" onmouseout="volver(2)" src="../img/ofertasfinal/oferta3.png" id="o3" alt="">
+                <figcaption><button onclick="agregarAlCarrito(3)" class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(3)" onmouseout="volver(3)" src="../img/ofertasfinal/oferta4.png" id="o4" alt="">
+                <figcaption><button onclick="agregarAlCarrito(4)" class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(4)" onmouseout="volver(4)" src="../img/ofertasfinal/oferta5.png" id="o5" alt="">
+                <figcaption><button class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(5)" onmouseout="volver(5)" src="../img/ofertasfinal/oferta6.png" id="o6" alt="">
+                <figcaption><button class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(6)" onmouseout="volver(6)" src="../img/ofertasfinal/oferta7.png" id="o7" alt="">
+                <figcaption><button class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(7)" onmouseout="volver(7)" src="../img/ofertasfinal/oferta10.png" id="o8" alt="">
+                <figcaption><button class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+            <figure><img class="imgOfer" onmouseover="zoom(8)" onmouseout="volver(8)" src="../img/ofertasfinal/oferta11.png" id="o9" alt="">
+                <figcaption><button class="botonAgregar">Agregar</button></figcaption>
+            </figure>
+        </div>
+        <script src="../javaScript/script.js"></script>
+
+        <script>
+            //Agregar al carrito 
+            function agregarAlCarrito(idProducto) {
+
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+                carrito[idProducto] = (carrito[idProducto] || 0) + 1;
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                }
+
+        </script>
+
+
+
+
+    </article>
+
+    <script src="../javaScript/codigoHome.js"></script>
+    <script src="../javaScript/oferta.js"></script>
+
+
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="contenedor-footer">
+
+            <div class="categoria">
+
+                <ul>
+                    <li>Categoría
+                        <ul>
+                            <li>Computadoras</li>
+                            <li>Laptops</li>
+                            <li>Celulares</li>
+                            <li>Tablets</li>
+                            <li>Periféricos
+                                <ul>
+                                    <li>Teclado</li>
+                                    <li>Mouse</li>
+                                    <li>Auriculares</li>
+                                    <li>Cámara web</li>
+                                    <li>Parlantes</li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="acercaNosotros">
+                <ul>
+                    <li>Acerca de Nosotros
+                        <ul>
+                            <li>Nuestra Historia</li>
+                            <li>Misíon</li>
+                            <li>Visíon</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mediosPago1">
+                <ul>
+                    <li>Métodos de Pago
+                        <ul>
+                            <li>Visa</li>
+                            <li>MasterCard</li>
+                            <li>Yape</li>
+                            <li>Plin</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mediosPago2">
+                <img src="../img/logos/logo-visa.png" alt="">
+                <img src="../img/logos/logo-masterCard1.png" alt="">
+                <img src="../img/logos/logo-yape.jpg" alt="">
+                <img src="../img/logos/logo-plin.webp" alt="">
+            </div>
+        </div>
+
+        <h4 id="Copyright">Copyright 2023 | Todos los derechos reservados. Desarrollado por EquipoProductosTecnológicos
+        </h4>
+    </footer>
+
+    
+    
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script src="../javaScript/contador.js"></script>
